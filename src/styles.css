@@ -5,37 +5,41 @@
 }
 
 :root {
-  --terminal-font-color: #b0b2b6;
-  --terminal-output-color: #f6f6f6;
+  --terminal-font-color: #b0b2b6; /* Terminal text color */
+  --terminal-output-color: #f6f6f6; /* Terminal output color */
 }
 
+/* Adjusting order within body class */
 body {
+  font-family: sans-serif; /* Default font family */
+  background-color: #f6f9fc; /* Background color */
+  color: #333d54; /* Text color */
   margin: 0;
-  height: 100%;
-  overflow-x: hidden; /* Hide horizontal scroll */
-  font-family: sans-serif;
-  color: #333d54;
-  background-color: #f6f9fc;
+  height: 100%; 
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
+/* Order of properties in footer and hero-body */
 footer,
 .hero-body {
   background-color: transparent !important;
 }
 
+/* Consistent order within the footer class */
 .footer {
+  font-family: "Monaco", Consolas, Lucida Console, monospace; /* Consistent font */
   display: flex;
-  justify-content: center; /* Centers horizontally */
-  align-items: center; /* Centers vertically */
-  text-align: center; /* Ensures text is centered */
-  height: 50px; /* Adjust height if needed */
-  width: 100%; /* Ensures full-width footer */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center; /* Text alignment */
+  height: 50px; /* Footer height */
+  width: 100%; /* Full width */
 }
 
-
+/* Reordering properties for hyperlinks */
 a {
-  color: inherit;
-  transition: color 0.08s linear;
+  color: inherit; /* Inherit color */
+  transition: color 0.08s linear; /* Smooth transition */
 }
 
 a:hover {
@@ -43,182 +47,189 @@ a:hover {
   color: inherit;
 }
 
+/* Consistent order for canvas properties */
 #canvas {
   position: absolute;
-  height: 100vh; /* Adjusted to 100vh to avoid overflow */
   top: 0;
   right: 0;
   left: 0;
+  height: 100vh; /* Full viewport height */
 }
 
+/* Consistent order within hero class */
 .hero {
-  min-height: 100vh;
-  align-items: stretch;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: flex; /* Flex layout */
+  flex-direction: column; /* Vertical stacking */
+  align-items: stretch; 
+  justify-content: space-between; /* Space elements evenly */
+  min-height: 100vh; /* Minimum height */
 }
 
+/* Reordering properties in the title class */
 .title {
-  color: rgba(139, 180, 216, 0.94);
+  color: rgba(139, 180, 216, 0.94); /* Title color */
 }
 
+/* Consistent order within terminal class */
 .terminal {
-  border-radius: 10px;
-  overflow: hidden;
-  font-family: "Monaco", Consolas, Lucida Console, monospace;
-  margin: 50px; /* This adds space around the .terminal, adjust value as needed */
-  margin-bottom: 0px;
-  box-sizing: border-box; /* Ensures that padding and border are included in the width and height */
+  font-family: "Monaco", Consolas, Lucida Console, monospace; /* Terminal font */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; 
+  margin: 50px; /* Spacing */
+  box-sizing: border-box; /* Box-sizing */
 }
 
-
+/* Reordering properties in terminal-bar */
 .terminal-bar {
-  background-color: #eae8e9;
-  display: flex;
+  background-color: #eae8e9; /* Light background */
+  display: flex; 
   position: relative;
 }
 
 .dark-mode {
-  background: #0d0f17;
-  height: 42px;
-  align-items: center;
+  background: #0d0f17; /* Dark background */
+  height: 42px; /* Height of bar */
+  align-items: center; /* Align elements vertically */
 }
 
+/* Reordering properties in icon-btn */
 .icon-btn {
-  border-radius: 50%;
-  height: 12px;
+  border-radius: 50%; /* Circular shape */
+  height: 12px; 
   width: 12px;
 }
 
+/* Terminal icon button margins */
 .terminal-bar > div.icon-btn:first-child {
-  margin-left: 8px; /* Reduced margin to prevent overflow */
+  margin-left: 8px; 
 }
 
 .terminal-bar > div.icon-btn:not(:first-child) {
-  margin-left: 6px; /* Reduced margin to prevent overflow */
+  margin-left: 6px; 
 }
 
 .terminal-bar > div.icon-btn:last-child {
-  margin-right: 0.4rem; /* Reduced margin to prevent overflow */
+  margin-right: 0.4rem; 
 }
 
+/* Reordering properties in terminal-window */
 .terminal-window {
-  min-height: 254px;
-  max-height: 60vh;
-  padding: 0.5rem 1rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Vertical stacking */
+  padding: 0.5rem 1rem; /* Padding */
+  min-height: 254px; 
+  max-height: 60vh; /* Maximum height */
 }
 
+/* Background color for primary-bg */
 .primary-bg {
-  background-color: #0d0f17;
+  background-color: #0d0f17; /* Dark background */
 }
 
+/* Consistent order for shadow effects */
 .shadow {
-  box-shadow: 0 50px 100px rgba(50, 50, 93, 0.15),
-    0 15px 35px rgba(50, 50, 93, 0.2), 0 5px 15px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 50px 100px rgba(50, 50, 93, 0.15), 
+               0 15px 35px rgba(50, 50, 93, 0.2), 
+               0 5px 15px rgba(0, 0, 0, 0.12); 
 }
 
+/* Order of properties for terminal-bar-text */
 .terminal-bar-text {
-  position: absolute;
-  color: var(--terminal-font-color);
+  color: var(--terminal-font-color); /* Font color */
+  font-weight: 500; 
+  text-align: center; 
+  position: absolute; 
   width: 100%;
-  text-align: center;
-  font-weight: 500;
 }
 
+/* Consistent order for equal-height class */
 .has-equal-height {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+  height: 100%; 
+  display: flex; 
+  flex-direction: column; 
 }
 
+/* Reordering properties in terminal-output */
 .terminal-output {
   overflow-y: auto; /* Allow vertical overflow */
 }
 
-.column-child {
-  flex: 1;
-}
-
+/* Terminal-line property order */
 .terminal-line {
-  position: relative;
-  color: var(--terminal-font-color);
+  position: relative; 
+  color: var(--terminal-font-color); 
 }
 
+/* Reordered properties for output */
 .output {
-  margin-bottom: 1rem;
-  color: var(--terminal-output-color);
+  color: var(--terminal-output-color); /* Output color */
+  margin-bottom: 1rem; 
 }
 
+/* Reordering properties for color classes */
 .directory {
-  color: #75e1e7;
-  font-weight: 500;
+  color: #75e1e7; 
+  font-weight: 500; 
 }
 
 .success {
-  color: #8dd39e;
+  color: #8dd39e; 
 }
 
+/* Code color definitions */
 .code,
 .error,
 .social {
-  color: #8C95EE;
+  color: #8C95EE; 
 }
 
 .hack {
-  color: #5BC236;
-}
-.dummy-keyboard {
-  opacity: 0;
-  filter: alpha(opacity=0);
+  color: #5BC236; 
 }
 
+/* Reordering properties in dummy-keyboard */
+.dummy-keyboard {
+  opacity: 0; 
+  filter: alpha(opacity=0); 
+}
+
+/* Order of properties in user-input */
 .user-input {
-  position: relative;
+  position: relative; 
 }
 
 .user-input::after {
   display: block;
-  content: "";
-  width: 10px;
-  height: 20px;
-  background: rgba(255, 255, 255, 0.2);
-  position: absolute;
-  top: 0;
-  right: 0; /* Adjusted position to prevent overflow */
-  animation: blink 1s step-start 0s infinite;
+  content: ""; 
+  width: 10px; 
+  height: 20px; 
+  background: rgba(255, 255, 255, 0.2); 
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  animation: blink 1s step-start 0s infinite; 
 }
 
+/* Keyframes for blinking animation */
 @keyframes blink {
   50% {
-    opacity: 0;
+    opacity: 0; 
   }
 }
 
-.footer {
-  font-family: "Monaco", Consolas, Lucida Console, monospace;
-}
-
-::-webkit-scrollbar {
-  display: none;
-}
-
+/* Properties for board-container */
 .board-container {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  color: #ffffff; 
+  background-color: #333333; 
+  padding: 10px; 
+  margin-top: 1rem; 
+  margin-bottom: 1rem; 
+  border-radius: 5px; 
 }
 
-.board-container {
-  color: #ffffff;
-  background-color: #333333;
-  padding: 10px;
-  border-radius: 5px;
-}
-
+/* Media queries for responsive design */
 @media screen and (max-width: 768px) {
   .resume {
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.5rem; 
   }
 }
