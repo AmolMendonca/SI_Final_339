@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Amol Mendonca Portfolio"/>
+    <title>&nbsp;Amol Mendonca</title>
+    <meta
+      name="description"/>
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon" />
+<!-- 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"
+    /> -->
+    
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <section class="hero is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns">
+            <div class="column is-flex">
+              <div class="column-child terminal shadow">
+                <div class="terminal-bar dark-mode">
+                  <div class="icon-btn close"></div>
+                  <div class="icon-btn min"></div>
+                  <div class="icon-btn max"></div>
+                  <div
+                    class="terminal-bar-text is-hidden-mobile dark-mode-text"
+                  >
+                    <span class = "code">[macOS]</span> amolmendonca -- zsh
+                  </div>
+                </div>
+                <div
+                  class="terminal-window primary-bg"
+                  onclick="document.getElementById('dummyKeyboard').focus();"
+                >
+                  <div class="terminal-output" id="terminalOutput">
+                    <div class="terminal-line">
+                      <span class="help-msg"
+                        >Welcome to my portfolio! — Type
+                        <span class="code">help</span> for a list of supported
+                        commands.</span
+                      >
+                    </div>
+                  </div>
+                  <div class="terminal-line">
+                    <span class="success">➜</span>
+                    <span class="directory">[amolmendonca] ~ $</span>
+                    <span class="user-input" id="userInput"></span>
+                    <input
+                      type="text"
+                      id="dummyKeyboard"
+                      class="dummy-keyboard"
+                      autocomplete="off"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="content has-text-centered">
+          <p>Made by Amol Mendonca 👋</p>
+        </div>
+      </footer>
+    </section>
+    <script src="./src/index.js"></script>
+  </body>
+</html>
